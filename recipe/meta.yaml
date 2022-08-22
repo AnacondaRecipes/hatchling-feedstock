@@ -2,7 +2,7 @@
 {% set version = "1.8.0" %}
 {% set build = "0" %}
 {% set checksum = "a4f982fdca0717d8c46bfe7b501302f90aaf2a5302845d550b49c8739681feb2" %}
-
+# arbitrary change
 package:
   name: {{ name|lower }}
   version: {{ version }}
