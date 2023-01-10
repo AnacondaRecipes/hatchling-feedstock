@@ -24,14 +24,14 @@ requirements:
     - python
     # bootstrapping
     - packaging >=21.3
-    - pathspec >=0.9
+    - pathspec >=0.10.1
     - pluggy >=1.0.0
     - tomli >=2.0
   run:
     - editables >=0.3
     - importlib-metadata  # [py<38]
     - packaging >=21.3
-    - pathspec >=0.9
+    - pathspec >=0.10.1
     - pluggy >=1.0.0
     - python
     - tomli >=1.2.2
