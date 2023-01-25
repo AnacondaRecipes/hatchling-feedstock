@@ -34,7 +34,7 @@ requirements:
     - pathspec >=0.10.1
     - pluggy >=1.0.0
     - python
-    - tomli >=1.2.2
+    - tomli >=1.2.2  # [py<311]
 
 test:
   imports:
