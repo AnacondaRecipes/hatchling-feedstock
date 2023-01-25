@@ -1,7 +1,7 @@
 {% set name = "hatchling" %}
-{% set version = "1.8.0" %}
+{% set version = "1.12.2" %}
 {% set build = "0" %}
-{% set checksum = "a4f982fdca0717d8c46bfe7b501302f90aaf2a5302845d550b49c8739681feb2" %}
+{% set checksum = "8a6d719d96653a0f3901072b12710c9c3cc934f9061b443775c6789b45333495" %}
 
 package:
   name: {{ name|lower }}
@@ -24,17 +24,17 @@ requirements:
     - python
     # bootstrapping
     - packaging >=21.3
-    - pathspec >=0.9
+    - pathspec >=0.10.1
     - pluggy >=1.0.0
     - tomli >=2.0
   run:
     - editables >=0.3
     - importlib-metadata  # [py<38]
     - packaging >=21.3
-    - pathspec >=0.9
+    - pathspec >=0.10.1
     - pluggy >=1.0.0
     - python
-    - tomli >=1.2.2
+    - tomli >=1.2.2  # [py<311]
 
 test:
   imports:
