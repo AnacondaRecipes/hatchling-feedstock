@@ -1,7 +1,7 @@
 {% set name = "hatchling" %}
-{% set version = "1.17.1" %}
+{% set version = "1.18.0" %}
 {% set build = "0" %}
-{% set checksum = "76dee5108f929b7eb9102df0a1bf88fa3247d68a44ff1f395e1cf32eaab0c6fa" %}
+{% set checksum = "50e99c3110ce0afc3f7bdbadff1c71c17758e476731c27607940cfa6686489ca" %}
 
 package:
   name: {{ name|lower }}
