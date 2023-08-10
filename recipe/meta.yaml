@@ -27,7 +27,7 @@ requirements:
     - pathspec 0.10.3
     - pluggy 1.0.0
     - tomli 1.2.2
-    - trove-classifiers
+    - trove-classifiers 2023.3.9
   run:
     - editables >=0.3
     - importlib-metadata  # [py<38]
