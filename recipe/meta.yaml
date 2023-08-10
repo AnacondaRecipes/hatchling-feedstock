@@ -30,7 +30,6 @@ requirements:
     - trove-classifiers 2023.3.9
   run:
     - editables >=0.3
-    - importlib-metadata  # [py<38]
     - packaging >=21.3
     - pathspec >=0.10.1
     - pluggy >=1.0.0
