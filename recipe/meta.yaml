@@ -20,9 +20,9 @@ build:
 
 requirements:
   host:
+    - editables 0.3
     - pip
     - python
-    - wheel
     - packaging 21.3
     - pathspec 0.10.3
     - pluggy 1.0.0
