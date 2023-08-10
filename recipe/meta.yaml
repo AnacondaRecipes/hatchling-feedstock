@@ -22,11 +22,12 @@ requirements:
   host:
     - pip
     - python
-    # bootstrapping
-    - packaging >=21.3
-    - pathspec >=0.10.1
-    - pluggy >=1.0.0
-    - tomli >=2.0
+    - wheel
+    - packaging 21.3
+    - pathspec 0.10.3
+    - pluggy 1.0.0
+    - tomli 1.2.2
+    - trove-classifiers
   run:
     - editables >=0.3
     - importlib-metadata  # [py<38]
@@ -35,6 +36,7 @@ requirements:
     - pluggy >=1.0.0
     - python
     - tomli >=1.2.2  # [py<311]
+    - trove-classifiers
 
 test:
   imports:
