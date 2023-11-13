@@ -1,5 +1,5 @@
 {% set name = "hatchling" %}
-{% set version = "1.12.2" %}
+{% set version = "1.8.0" %}
 {% set build = "0" %}
 {% set checksum = "8a6d719d96653a0f3901072b12710c9c3cc934f9061b443775c6789b45333495" %}
 
@@ -12,7 +12,7 @@ source:
   sha256: {{ checksum }}
 
 build:
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed . -vv
   number: {{ build }}
   skip: True  # [py<37]
   entry_points:
