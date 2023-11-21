@@ -35,6 +35,9 @@ requirements:
     - pluggy >=1.0.0
     - tomli >=1.2.2  # [py<311]
 
+# Tests do not include upstream tests because they are only testing 'python -m pip install', which is already done
+# in the build section. It's pretty much a useless integration test which would not work with how conda build
+# sets up the test environment.
 test:
   imports:
     - hatchling
