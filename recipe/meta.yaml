@@ -24,7 +24,9 @@ requirements:
     - python
     - setuptools
     - wheel
-    - importlib_metadata
+    - pathspec
+    - pluggy
+    - packaging
   run:
     - python
     - editables >=0.3
