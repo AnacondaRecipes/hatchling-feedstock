@@ -14,7 +14,7 @@ source:
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: {{ build }}
-  skip: True  # [py<37]
+  skip: True  # [py<38]
   entry_points:
     - hatchling = hatchling.cli:hatchling
 
