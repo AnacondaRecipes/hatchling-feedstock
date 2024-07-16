@@ -53,7 +53,7 @@ about:
   license_file: LICENSE.txt
 
 extra:
-   anaconda-services:
+  anaconda-services:
     reason: Dependency for apache-airflow
     recipe-maintainers:
       - ianaobi
