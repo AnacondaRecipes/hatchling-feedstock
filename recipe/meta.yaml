@@ -1,7 +1,7 @@
 {% set name = "hatchling" %}
-{% set version = "1.21.1" %}
+{% set version = "1.25.0" %}
 {% set build = "0" %}
-{% set checksum = "bba440453a224e7d4478457fa2e8d8c3633765bafa02975a6b53b9bf917980bc" %}
+{% set checksum = "7064631a512610b52250a4d3ff1bd81551d6d1431c4eb7b72e734df6c74f4262" %}
 
 package:
   name: {{ name|lower }}
@@ -23,15 +23,13 @@ requirements:
     - pip
     - python
     # bootstrapping
-    - editables >=0.3
-    - packaging >=21.3
+    - packaging >=23.2
     - pathspec >=0.10.1
     - pluggy >=1.0.0
     - tomli >=1.2.2  # [py<311]
     - trove-classifiers
   run:
-    - editables >=0.3
-    - packaging >=21.3
+    - packaging >=23.2
     - pathspec >=0.10.1
     - pluggy >=1.0.0
     - python
