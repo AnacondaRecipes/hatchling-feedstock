@@ -1,6 +1,6 @@
 {% set name = "hatchling" %}
 {% set version = "1.25.0" %}
-{% set build = "0" %}
+{% set build = "1" %}
 {% set checksum = "7064631a512610b52250a4d3ff1bd81551d6d1431c4eb7b72e734df6c74f4262" %}
 
 package:
@@ -27,7 +27,7 @@ requirements:
     - pathspec >=0.10.1
     - pluggy >=1.0.0
     - tomli >=1.2.2  # [py<311]
-    - trove-classifiers
+    - trove-classifiers ==2024.10.14
   run:
     - packaging >=23.2
     - pathspec >=0.10.1
