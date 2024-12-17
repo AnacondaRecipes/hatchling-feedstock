@@ -1,0 +1,6 @@
+build_env_vars:
+  ANACONDA_ROCKET_ENABLE_PY313 : yes
+pbp_autopublish: true
+
+channels:
+  - https://staging.continuum.io/prefect/fs/packaging-feedstock/pr14/f59bf67
