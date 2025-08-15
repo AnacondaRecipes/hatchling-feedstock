@@ -1,6 +1,5 @@
 {% set name = "hatchling" %}
 {% set version = "1.27.0" %}
-{% set build = 0 %}
 {% set checksum = "971c296d9819abb3811112fc52c7a9751c8d381898f36533bb16f9791e941fd6" %}
 
 package:
@@ -13,7 +12,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: {{ build }}
+  number: 1
   skip: True  # [py<38]
   entry_points:
     - hatchling = hatchling.cli:hatchling
