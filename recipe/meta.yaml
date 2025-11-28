@@ -1,20 +1,20 @@
 {% set name = "hatchling" %}
-{% set version = "1.27.0" %}
+{% set version = "1.28.0" %}
 {% set build = 1 %}
-{% set checksum = "971c296d9819abb3811112fc52c7a9751c8d381898f36533bb16f9791e941fd6" %}
+{% set checksum = "4d50b02aece6892b8cd0b3ce6c82cb218594d3ec5836dbde75bf41a21ab004c8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hatchling-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hatchling-{{ version }}.tar.gz
   sha256: {{ checksum }}
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: {{ build }}
-  skip: True  # [py<38]
+  number: 0
+  skip: true  # [py<310]
   entry_points:
     - hatchling = hatchling.cli:hatchling
 
