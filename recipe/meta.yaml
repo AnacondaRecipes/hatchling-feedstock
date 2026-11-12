@@ -1,5 +1,5 @@
 {% set name = "hatchling" %}
-{% set version = "1.31.0" %}
+{% set version = "1.33.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6b48ad4068a482ed7239b3a8215bc55b47aad3345d58dfc94e553c5d2d46211b
+  sha256: 4c422bd4d554fcff5de5b73e9596f85e41e9f97f7e553d8f7595ecb31a627bef
 
 build:
   number: 0
@@ -25,6 +25,7 @@ requirements:
     - pathspec >=0.10.1
     - pluggy >=1.0.0
     - tomli >=1.2.2  # [py<311]
+    - tomlkit >=0.11.1
     - trove-classifiers
   run:
     - packaging >=24.2
@@ -32,7 +33,12 @@ requirements:
     - pluggy >=1.0.0
     - python
     - tomli >=1.2.2  # [py<311]
+    - tomlkit >=0.11.1
     - trove-classifiers
+  run_constrained:
+    # editables is imported lazily in hatchling/builders/wheel.py (build_editable_detection)
+    # and is not declared in upstream requires_dist
+    - editables >=0.3,<1
 
 test:
   imports:
