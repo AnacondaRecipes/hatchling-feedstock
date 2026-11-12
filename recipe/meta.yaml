@@ -25,7 +25,6 @@ requirements:
     - pathspec >=0.10.1
     - pluggy >=1.0.0
     - tomli >=1.2.2  # [py<311]
-    - tomlkit >=0.11.1
     - trove-classifiers
   run:
     - packaging >=24.2
